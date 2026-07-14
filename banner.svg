@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A1A;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#0D0D2B;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0A0A1A;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00E676;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00C853;stop-opacity:0.7"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00E676;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00E676;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#00E676;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="blur" in2="SourceGraphic" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.04" stroke="#00E676">
+    <line x1="0" y1="50" x2="900" y2="50"/>
+    <line x1="0" y1="100" x2="900" y2="100"/>
+    <line x1="0" y1="150" x2="900" y2="150"/>
+    <line x1="0" y1="200" x2="900" y2="200"/>
+    <line x1="0" y1="250" x2="900" y2="250"/>
+    <line x1="100" y1="0" x2="100" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="500" y1="0" x2="500" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="700" y1="0" x2="700" y2="300"/>
+    <line x1="800" y1="0" x2="800" y2="300"/>
+  </g>
+
+  <!-- Binary rain columns -->
+  <g font-family="Consolas, monospace" font-size="11" fill="#00E676">
+    <!-- Column 1 -->
+    <text x="30" y="20" opacity="0.06">1</text>
+    <text x="30" y="35" opacity="0.10">0</text>
+    <text x="30" y="50" opacity="0.15">1</text>
+    <text x="30" y="65" opacity="0.12">1</text>
+    <text x="30" y="80" opacity="0.08">0</text>
+    <text x="30" y="95" opacity="0.18">1</text>
+    <text x="30" y="110" opacity="0.10">0</text>
+    <text x="30" y="125" opacity="0.06">1</text>
+    <text x="30" y="140" opacity="0.14">0</text>
+    <text x="30" y="155" opacity="0.08">1</text>
+    <text x="30" y="170" opacity="0.20">0</text>
+    <text x="30" y="185" opacity="0.12">1</text>
+    <text x="30" y="200" opacity="0.07">0</text>
+    <text x="30" y="215" opacity="0.16">1</text>
+    <text x="30" y="230" opacity="0.09">0</text>
+    <text x="30" y="245" opacity="0.05">1</text>
+    <text x="30" y="260" opacity="0.11">0</text>
+    <text x="30" y="275" opacity="0.07">1</text>
+    <text x="30" y="290" opacity="0.04">0</text>
+    <!-- Column 2 -->
+    <text x="60" y="15" opacity="0.08">0</text>
+    <text x="60" y="30" opacity="0.14">1</text>
+    <text x="60" y="45" opacity="0.06">0</text>
+    <text x="60" y="60" opacity="0.20">1</text>
+    <text x="60" y="75" opacity="0.10">0</text>
+    <text x="60" y="90" opacity="0.05">1</text>
+    <text x="60" y="105" opacity="0.16">0</text>
+    <text x="60" y="120" opacity="0.12">1</text>
+    <text x="60" y="135" opacity="0.08">0</text>
+    <text x="60" y="150" opacity="0.18">1</text>
+    <text x="60" y="165" opacity="0.06">0</text>
+    <text x="60" y="180" opacity="0.14">1</text>
+    <text x="60" y="195" opacity="0.09">1</text>
+    <text x="60" y="210" opacity="0.11">0</text>
+    <text x="60" y="225" opacity="0.07">1</text>
+    <text x="60" y="240" opacity="0.15">0</text>
+    <text x="60" y="255" opacity="0.05">1</text>
+    <text x="60" y="270" opacity="0.10">0</text>
+    <!-- Column 3 -->
+    <text x="90" y="25" opacity="0.12">1</text>
+    <text x="90" y="40" opacity="0.07">0</text>
+    <text x="90" y="55" opacity="0.18">1</text>
+    <text x="90" y="70" opacity="0.05">0</text>
+    <text x="90" y="85" opacity="0.14">1</text>
+    <text x="90" y="100" opacity="0.09">0</text>
+    <text x="90" y="115" opacity="0.20">1</text>
+    <text x="90" y="130" opacity="0.06">0</text>
+    <text x="90" y="145" opacity="0.16">1</text>
+    <text x="90" y="160" opacity="0.10">0</text>
+    <text x="90" y="175" opacity="0.08">1</text>
+    <text x="90" y="190" opacity="0.15">0</text>
+    <text x="90" y="205" opacity="0.07">1</text>
+    <text x="90" y="220" opacity="0.12">0</text>
+    <text x="90" y="235" opacity="0.18">1</text>
+    <text x="90" y="250" opacity="0.04">0</text>
+    <!-- Column 4 -->
+    <text x="785" y="20" opacity="0.10">0</text>
+    <text x="785" y="35" opacity="0.16">1</text>
+    <text x="785" y="50" opacity="0.06">0</text>
+    <text x="785" y="65" opacity="0.14">1</text>
+    <text x="785" y="80" opacity="0.08">1</text>
+    <text x="785" y="95" opacity="0.20">0</text>
+    <text x="785" y="110" opacity="0.05">1</text>
+    <text x="785" y="125" opacity="0.12">0</text>
+    <text x="785" y="140" opacity="0.18">1</text>
+    <text x="785" y="155" opacity="0.07">0</text>
+    <text x="785" y="170" opacity="0.15">1</text>
+    <text x="785" y="185" opacity="0.09">0</text>
+    <text x="785" y="200" opacity="0.06">1</text>
+    <text x="785" y="215" opacity="0.14">0</text>
+    <text x="785" y="230" opacity="0.10">1</text>
+    <text x="785" y="245" opacity="0.08">0</text>
+    <text x="785" y="260" opacity="0.16">1</text>
+    <text x="785" y="275" opacity="0.05">0</text>
+    <!-- Column 5 -->
+    <text x="815" y="10" opacity="0.14">1</text>
+    <text x="815" y="25" opacity="0.08">0</text>
+    <text x="815" y="40" opacity="0.18">1</text>
+    <text x="815" y="55" opacity="0.06">1</text>
+    <text x="815" y="70" opacity="0.12">0</text>
+    <text x="815" y="85" opacity="0.05">1</text>
+    <text x="815" y="100" opacity="0.16">0</text>
+    <text x="815" y="115" opacity="0.10">1</text>
+    <text x="815" y="130" opacity="0.07">0</text>
+    <text x="815" y="145" opacity="0.20">1</text>
+    <text x="815" y="160" opacity="0.09">0</text>
+    <text x="815" y="175" opacity="0.14">1</text>
+    <text x="815" y="190" opacity="0.06">0</text>
+    <text x="815" y="205" opacity="0.18">1</text>
+    <text x="815" y="220" opacity="0.08">0</text>
+    <text x="815" y="235" opacity="0.12">1</text>
+    <text x="815" y="250" opacity="0.15">0</text>
+    <text x="815" y="265" opacity="0.04">1</text>
+    <!-- Column 6 -->
+    <text x="845" y="18" opacity="0.07">0</text>
+    <text x="845" y="33" opacity="0.12">1</text>
+    <text x="845" y="48" opacity="0.05">0</text>
+    <text x="845" y="63" opacity="0.18">1</text>
+    <text x="845" y="78" opacity="0.10">0</text>
+    <text x="845" y="93" opacity="0.15">1</text>
+    <text x="845" y="108" opacity="0.08">0</text>
+    <text x="845" y="123" opacity="0.20">1</text>
+    <text x="845" y="138" opacity="0.06">0</text>
+    <text x="845" y="153" opacity="0.14">1</text>
+    <text x="845" y="168" opacity="0.09">0</text>
+    <text x="845" y="183" opacity="0.16">1</text>
+    <text x="845" y="198" opacity="0.07">0</text>
+    <text x="845" y="213" opacity="0.11">1</text>
+    <text x="845" y="228" opacity="0.05">0</text>
+    <text x="845" y="243" opacity="0.18">1</text>
+    <text x="845" y="258" opacity="0.10">0</text>
+    <text x="845" y="273" opacity="0.06">1</text>
+    <!-- Column 7 -->
+    <text x="870" y="12" opacity="0.09">1</text>
+    <text x="870" y="27" opacity="0.15">0</text>
+    <text x="870" y="42" opacity="0.07">1</text>
+    <text x="870" y="57" opacity="0.12">0</text>
+    <text x="870" y="72" opacity="0.18">1</text>
+    <text x="870" y="87" opacity="0.06">0</text>
+    <text x="870" y="102" opacity="0.14">1</text>
+    <text x="870" y="117" opacity="0.10">0</text>
+    <text x="870" y="132" opacity="0.08">1</text>
+    <text x="870" y="147" opacity="0.16">0</text>
+    <text x="870" y="162" opacity="0.05">1</text>
+    <text x="870" y="177" opacity="0.20">0</text>
+    <text x="870" y="192" opacity="0.09">1</text>
+    <text x="870" y="207" opacity="0.13">0</text>
+    <text x="870" y="222" opacity="0.07">1</text>
+    <text x="870" y="237" opacity="0.14">0</text>
+    <text x="870" y="252" opacity="0.08">1</text>
+    <text x="870" y="267" opacity="0.11">0</text>
+  </g>
+
+  <!-- Hex bytes decorative -->
+  <g font-family="Consolas, monospace" font-size="9" fill="#00E676" opacity="0.06">
+    <text x="120" y="285">4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00</text>
+    <text x="120" y="296">B8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00</text>
+    <text x="500" y="15">50 45 00 00 64 86 06 00 A3 CB 7F 2E 00 00 00 00</text>
+    <text x="500" y="26">00 00 00 00 F0 00 22 00 0B 02 0E 00 00 1E 01 00</text>
+  </g>
+  <g font-family="Consolas, monospace" font-size="9" fill="#00E676" opacity="0.04">
+    <text x="150" y="45">E8 00 00 00 00 5D 83 ED 05 8B C5 2B 85 94 0A 00</text>
+    <text x="320" y="275">89 45 FC 8B 45 FC 89 85 80 0A 00 00 C7 85 84 0A</text>
+  </g>
+
+  <!-- Glow line -->
+  <rect x="0" y="148" width="900" height="4" fill="url(#glowGrad)" filter="url(#softGlow)"/>
+
+  <!-- Shield icon -->
+  <g transform="translate(130, 80)" filter="url(#glow)">
+    <path d="M0,15 L0,55 C0,80 30,100 30,100 C30,100 60,80 60,55 L60,15 L30,0 Z" fill="none" stroke="#00E676" stroke-width="2.5" opacity="0.9"/>
+    <path d="M8,20 L8,52 C8,73 30,90 30,90 C30,90 52,73 52,52 L52,20 L30,8 Z" fill="#00E676" opacity="0.08"/>
+    <!-- Lock body -->
+    <rect x="18" y="45" width="24" height="18" rx="3" fill="none" stroke="#00E676" stroke-width="2" opacity="0.8"/>
+    <!-- Lock shackle -->
+    <path d="M23,45 L23,38 C23,32 37,32 37,38 L37,45" fill="none" stroke="#00E676" stroke-width="2" opacity="0.8"/>
+    <!-- Keyhole -->
+    <circle cx="30" cy="53" r="2.5" fill="#00E676" opacity="0.9"/>
+    <rect x="29" y="54" width="2" height="5" fill="#00E676" opacity="0.9"/>
+    <!-- AI sparkle dots -->
+    <circle cx="15" cy="30" r="1.5" fill="#00E676" opacity="0.5"/>
+    <circle cx="45" cy="30" r="1.5" fill="#00E676" opacity="0.5"/>
+    <circle cx="30" cy="20" r="1.5" fill="#00E676" opacity="0.5"/>
+    <circle cx="10" cy="42" r="1" fill="#00E676" opacity="0.3"/>
+    <circle cx="50" cy="42" r="1" fill="#00E676" opacity="0.3"/>
+  </g>
+
+  <!-- Title -->
+  <text x="220" y="115" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="32" fill="#FFFFFF" letter-spacing="1">AI-EXE-File-Protector</text>
+
+  <!-- Subtitle -->
+  <text x="220" y="145" font-family="Segoe UI, Arial, sans-serif" font-weight="400" font-size="15" fill="#00E676" opacity="0.85" letter-spacing="0.5">AI-Powered Executable Protection &amp; Obfuscation</text>
+
+  <!-- Feature pills -->
+  <g transform="translate(220, 168)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="110" height="26" rx="13" fill="#00E676" opacity="0.12" stroke="#00E676" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="55" y="17" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#00E676" text-anchor="middle" font-weight="600">Control Flow</text>
+    <!-- Pill 2 -->
+    <rect x="120" y="0" width="115" height="26" rx="13" fill="#00E676" opacity="0.12" stroke="#00E676" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="177" y="17" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#00E676" text-anchor="middle" font-weight="600">String Encrypt</text>
+    <!-- Pill 3 -->
+    <rect x="245" y="0" width="105" height="26" rx="13" fill="#00E676" opacity="0.12" stroke="#00E676" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="297" y="17" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#00E676" text-anchor="middle" font-weight="600">Anti-Debug</text>
+    <!-- Pill 4 -->
+    <rect x="360" y="0" width="105" height="26" rx="13" fill="#00E676" opacity="0.12" stroke="#00E676" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="412" y="17" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#00E676" text-anchor="middle" font-weight="600">PE Packing</text>
+  </g>
+
+  <!-- Version badge -->
+  <g transform="translate(220, 210)">
+    <rect x="0" y="0" width="70" height="22" rx="4" fill="#00E676" opacity="0.15"/>
+    <rect x="0" y="0" width="70" height="22" rx="4" fill="none" stroke="#00E676" stroke-width="0.8" stroke-opacity="0.5"/>
+    <text x="35" y="15" font-family="Consolas, monospace" font-size="11" fill="#00E676" text-anchor="middle" font-weight="700">v3.2.0</text>
+  </g>
+
+  <!-- Bottom decorative line -->
+  <rect x="130" y="245" width="640" height="1" fill="#00E676" opacity="0.1"/>
+
+  <!-- Corner accents -->
+  <path d="M0,0 L40,0 L40,3 L3,3 L3,40 L0,40 Z" fill="#00E676" opacity="0.15"/>
+  <path d="M900,0 L860,0 L860,3 L897,3 L897,40 L900,40 Z" fill="#00E676" opacity="0.15"/>
+  <path d="M0,300 L40,300 L40,297 L3,297 L3,260 L0,260 Z" fill="#00E676" opacity="0.15"/>
+  <path d="M900,300 L860,300 L860,297 L897,297 L897,260 L900,260 Z" fill="#00E676" opacity="0.15"/>
+
+  <!-- Scan line effect -->
+  <rect x="0" y="0" width="900" height="300" fill="url(#bgGrad)" opacity="0.02"/>
+</svg>
